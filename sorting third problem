@@ -1,0 +1,14 @@
+question link -: https://practice.geeksforgeeks.org/problems/consecutive-array-elements2711/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article
+
+solution -: class Solution
+{
+    boolean areConsecutives(long arr[], int N)
+    {
+      Arrays.sort(arr);
+        for(int i=1;i<N;i++){
+            if(arr[i]-arr[i-1]!=1)
+            return false;
+        }
+        return true;
+    }
+}
