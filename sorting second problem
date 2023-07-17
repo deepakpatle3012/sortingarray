@@ -1,0 +1,8 @@
+question link -: https://www.interviewbit.com/problems/kth-smallest-element-in-the-array/
+
+solution -: public class Solution {
+    public int kthsmallest(final int[] A, int B) {
+        Arrays.sort(A);
+        return A[B-1];
+    }
+}
